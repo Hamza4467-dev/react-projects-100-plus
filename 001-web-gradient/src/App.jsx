@@ -34,11 +34,9 @@ function App() {
     }
     setGradient(colors);
   };
-
   useEffect(() => {
     generateGradient();
   }, [num, type]);
-
   const isCopy = (copyText) => {
     navigator.clipboard.writeText(copyText);
     toast.success("gradient code copied");

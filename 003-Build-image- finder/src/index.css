@@ -1,0 +1,13 @@
+@import "tailwindcss";
+.search-button {
+  background-color: #4c51bf; /* Indigo/Violet color similar to the image */
+}
+.search-button:hover {
+  background-color: #5a62d3;
+}
+.download-button {
+  background-color: #10b981; /* Emerald/Green color similar to the image */
+}
+.download-button:hover {
+  background-color: #059669;
+}

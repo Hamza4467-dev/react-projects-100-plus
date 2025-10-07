@@ -76,6 +76,7 @@ function App() {
   useEffect(() => {
     generate();
   }, [option]);
+
   return (
     <>
       <div className="min-h-screen p-12 bg-gradient-to-br from-slate-900 via-slate-900 flex items-center justify-center">
