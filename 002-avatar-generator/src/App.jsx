@@ -46,6 +46,7 @@ function App() {
     const finalNum = Math.floor(Math.random() * 99) + 1;
     return finalNum;
   };
+
   const generate = () => {
     const obj = avatarStyles.find((item) => item.value === option);
     const url = obj.url;
@@ -140,5 +141,4 @@ function App() {
     </>
   );
 }
-
 export default App;

@@ -52,7 +52,7 @@ function App() {
             <span role="img" aria-label="camera">
               📷
             </span>
-            <span>Image Gallery - **flower**</span>
+            <span>Image Gallery - {page > 0 ? page : "-"}</span>
           </h1>
         </header>
         <hr className="mb-8 border-indigo-200" />
