@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import axios from "axios";
 import "remixicon/fonts/remixicon.css";
@@ -6,6 +6,10 @@ import getYouTubeID from "get-youtube-id";
 
 const API_KEY = "CkXrWNmLSrO6jk7RE5N57sJcSEVkxESJjkTDBNL6Lg3JDXcEjaZ";
 function App() {
+  const inputdata=useRef(null)
+  if(inputdata.current){
+    inputdata.current.focus()
+  }
   //   /tmp/institute/Desktop > ./test
   // 120x90
   // https://img.youtube.com/vi/VIDEO_ID/default.jpg
@@ -77,6 +81,7 @@ function App() {
   return (
     <>
       <div className="min-h-screen bg-gray-400 py-8">
+        <input type="text" placeholder="enter text" ref={inputdata} />
         <div className="text-center w-full">
           <h1 className="text-4xl font-bold">Youtube thumbnial downloader</h1>
           <form className="space-x-4 mt-8" onSubmit={handleSubmitt}>
